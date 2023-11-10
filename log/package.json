@@ -1,6 +1,6 @@
 {
   "name": "jsgame-log",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "JSGame Log System",
   "main": "index.js",
   "publishConfig": {
