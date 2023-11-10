@@ -1,0 +1,26 @@
+{
+  "name": "jsgame-log",
+  "version": "0.0.1",
+  "description": "JSGame Log System",
+  "main": "index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PaologGithub/ArobaseJSGame.git"
+  },
+  "author": "Paolog",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PaologGithub/ArobaseJSGame/issues"
+  },
+  "homepage": "https://github.com/PaologGithub/ArobaseJSGame#readme",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "store": "^2.0.12"
+  }
+}
