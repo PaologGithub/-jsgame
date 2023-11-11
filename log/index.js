@@ -36,7 +36,7 @@ colors.enable()
 function info(str) {
     check(() => {
         const date = new Date()
-        console.info(`[INFO (${date.getHours()}:${date.getMinutes()}:${date.getSeconds()})] ` + str + "\n")
+        process.stdout.write(`[INFO (${date.getHours()}:${date.getMinutes()}:${date.getSeconds()})] ` + str + "\n")
         fs.appendFileSync(store.get("@jsgame/log.dir") + "/latest.log", `[INFO (${date.getHours()}:${date.getMinutes()}:${date.getSeconds()})] ` + str + "\n")
 
     })
@@ -44,7 +44,7 @@ function info(str) {
 function warning(str) {
     check(() => {
         const date = new Date()
-        console.info('[' + `WARNING (${date.getHours()}:${date.getMinutes()}:${date.getSeconds()})`.yellow + "] " + str + "\n")
+        process.stdout.write('[' + `WARNING (${date.getHours()}:${date.getMinutes()}:${date.getSeconds()})`.yellow + "] " + str + "\n")
         fs.appendFileSync(store.get("@jsgame/log.dir") + "/latest.log", '[' + `WARNING (${date.getHours()}:${date.getMinutes()}:${date.getSeconds()})` + "] " + str + "\n")
     })
     
@@ -52,7 +52,7 @@ function warning(str) {
 function error(str) {
     check(() => {
         const date = new Date()
-        console.info('[' + `ERROR (${date.getHours()}:${date.getMinutes()}:${date.getSeconds()})`.bgRed + "] " + str + "\n")
+        process.stdout.write('[' + `ERROR (${date.getHours()}:${date.getMinutes()}:${date.getSeconds()})`.bgRed + "] " + str + "\n")
         fs.appendFileSync(store.get("@jsgame/log.dir") + "/latest.log", '[' + `ERROR (${date.getHours()}:${date.getMinutes()}:${date.getSeconds()})` + "] " + str + "\n")
     })
     
@@ -60,14 +60,14 @@ function error(str) {
 function log(str) {
     check(() => {
         const date = new Date()
-        console.info('[' + `LOG (${date.getHours()}:${date.getMinutes()}:${date.getSeconds()})`.blue + "] " + str + "\n")
+        process.stdout.write('[' + `LOG (${date.getHours()}:${date.getMinutes()}:${date.getSeconds()})`.blue + "] " + str + "\n")
         fs.appendFileSync(store.get("@jsgame/log.dir") + "/latest.log", '[' + `LOG (${date.getHours()}:${date.getMinutes()}:${date.getSeconds()})` + "] " + str + "\n")
     })
 }
 function finished(str) {
     check(() => {
         const date = new Date()
-        console.info('[' + `FINISHED (${date.getHours()}:${date.getMinutes()}:${date.getSeconds()})`.green + "] " + str + "\n")
+        process.stdout.write('[' + `FINISHED (${date.getHours()}:${date.getMinutes()}:${date.getSeconds()})`.green + "] " + str + "\n")
         fs.appendFileSync(store.get("@jsgame/log.dir") + "/latest.log",'[' + `FINISHED (${date.getHours()}:${date.getMinutes()}:${date.getSeconds()})` + "] " + str+ "\n")
     })
 }
