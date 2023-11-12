@@ -79,3 +79,4 @@ function quit(_callback = () => {console.log("Quitted @jsgame/log")}) {
 }
 
 module.exports = {info, warning, error, log, finished, quit}
+export {info, warning, error, log, finished, quit}
