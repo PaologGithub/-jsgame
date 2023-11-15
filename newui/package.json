@@ -1,7 +1,7 @@
 {
-  "name": "@paolog/jsgame-log",
-  "version": "0.0.5",
-  "description": "JSGame Log System",
+  "name": "@paolog/newui",
+  "version": "0.0.0",
+  "description": "NewUI Technology",
   "main": "index.js",
   "publishConfig": {
     "access": "public"
@@ -13,14 +13,13 @@
     "type": "git",
     "url": "git+https://github.com/PaologGithub/ArobaseJSGame.git"
   },
+  "keywords": [
+    "NewUI"
+  ],
   "author": "Paolog",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/PaologGithub/ArobaseJSGame/issues"
   },
-  "homepage": "https://github.com/PaologGithub/ArobaseJSGame#readme",
-  "dependencies": {
-    "colors": "^1.4.0",
-    "store": "^2.0.12"
-  }
+  "homepage": "https://github.com/PaologGithub/ArobaseJSGame#readme"
 }
